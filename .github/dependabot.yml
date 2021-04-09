@@ -13,6 +13,10 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "daily"
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
