@@ -12,20 +12,6 @@ resource "aws_cloudfront_origin_access_identity" "default" {
   comment = "${module.distribution_label.id}"
 }
 
-module "logs" {
-  source                   = "github.com/cloudposse/terraform-log-storage.git?ref=tags/0.2.2"
-  namespace                = "${var.namespace}"
-  stage                    = "${var.stage}"
-  name                     = "${var.name}"
-  delimiter                = "${var.delimiter}"
-  attributes               = ["${compact(concat(var.attributes, list("origin", "logs")))}"]
-  tags                     = "${var.tags}"
-  prefix                   = "${var.log_prefix}"
-  standard_transition_days = "${var.log_standard_transition_days}"
-  glacier_transition_days  = "${var.log_glacier_transition_days}"
-  expiration_days          = "${var.log_expiration_days}"
-}
-
 module "distribution_label" {
   source     = "bitbucket.org/cloudposse/terraform-null-label.git"
   namespace  = "${var.namespace}"
