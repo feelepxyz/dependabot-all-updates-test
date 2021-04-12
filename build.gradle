@@ -45,7 +45,7 @@ dependencies {
     compile group: 'com.dumptruckman.minecraft', name: 'JsonConfiguration', version: '1.1'
     compile group: 'org.inventivetalent', name: 'mc-wrappers', version: '1.0.3-SNAPSHOT'
     compile group: 'io.github.lukehutch', name: 'fast-classpath-scanner', version: '3.1.15'
-    compile group: 'org.objenesis', name: 'objenesis', version: '2.6'
+    compile group: 'org.objenesis', name: 'objenesis', version: '3.2'
 
     compile(group: 'org.inventivetalent', name: 'menubuilder', version: '1.0.2') {
         exclude group: 'org.bukkit'
