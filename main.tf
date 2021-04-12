@@ -1,26 +1,8 @@
-module "origin_label" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.3.7"
-  namespace  = "${var.namespace}"
-  stage      = "${var.stage}"
-  name       = "${var.name}"
-  delimiter  = "${var.delimiter}"
-  attributes = ["${compact(concat(var.attributes, list("origin")))}"]
-  tags       = "${var.tags}"
-}
 
 resource "aws_cloudfront_origin_access_identity" "default" {
   comment = "${module.distribution_label.id}"
 }
 
-module "distribution_label" {
-  source     = "bitbucket.org/cloudposse/terraform-null-label.git"
-  namespace  = "${var.namespace}"
-  stage      = "${var.stage}"
-  name       = "${var.name}"
-  attributes = "${var.attributes}"
-  delimiter  = "${var.delimiter}"
-  tags       = "${var.tags}"
-}
 
 resource "aws_cloudfront_distribution" "default" {
   enabled             = "${var.enabled}"
