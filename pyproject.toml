@@ -8,13 +8,9 @@ authors = ["Dependabot <support@dependabot.com>"]
 description = "Various small python projects."
 
 [tool.poetry.dependencies]
-python = "^3.6 || ^3.7"
-geopy = "^1.13"
-Pillow = "^5.1"
 requests = "^2.18"
 
 [tool.poetry.dev-dependencies]
-black = "^18.5"
 flake8 = "^3.5"
 flake8-comprehensions = "^1.4"
 httmock = "^1.2"
