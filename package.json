@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/feelepxyz/dependabot-all-updates-test#readme",
   "dependencies": {
-    "etag": "^1.8.1"
+    "etag": "^1.8.1",
+    "fetch-factory": "^0.0.2",
+    "whatwg-fetch": "3.0"
   }
 }
