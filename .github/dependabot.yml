@@ -85,7 +85,9 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: "ubuntu"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "python"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
