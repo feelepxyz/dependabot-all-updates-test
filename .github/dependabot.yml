@@ -44,6 +44,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "phoenix"
+        update-types: ["version-update:semver-patch"]
   - package-ecosystem: "bundler"
     directory: "/"
     schedule:
