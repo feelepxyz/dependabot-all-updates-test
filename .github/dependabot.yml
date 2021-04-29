@@ -23,6 +23,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "httpclient"
+        update-types: ["version-update:semver-patch"]
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
