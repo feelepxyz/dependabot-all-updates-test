@@ -19,6 +19,6 @@
   "dependencies": {
     "etag": "^1.8.1",
     "fetch-factory": "^0.0.2",
-    "whatwg-fetch": "3.0"
+    "whatwg-fetch": "3.6"
   }
 }
