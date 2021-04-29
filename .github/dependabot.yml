@@ -79,6 +79,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "whatwg-fetch"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
