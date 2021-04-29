@@ -17,14 +17,14 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-      - dependency-name: "guice"
+      - dependency-name: "com.google.inject:guice"
         update-types: ["version-update:semver-major"]
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "daily"
     ignore:
-      - dependency-name: "httpclient"
+      - dependency-name: "org.apache.httpcomponents:httpclient"
         update-types: ["version-update:semver-patch"]
   - package-ecosystem: "gitsubmodule"
     directory: "/"
