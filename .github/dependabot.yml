@@ -4,6 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "rsc.io/qr"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: "gomod"
     directory: "/nested_go"
     schedule:
