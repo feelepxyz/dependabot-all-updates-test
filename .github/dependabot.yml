@@ -30,6 +30,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "dependabot-test"
+        versions: [">= 0"]
   - package-ecosystem: "cargo"
     directory: "/"
     schedule:
