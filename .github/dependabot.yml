@@ -37,6 +37,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "rust"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: "mix"
     directory: "/"
     schedule:
