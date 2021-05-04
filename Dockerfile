@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
 FROM python:3.6.3
 
 ### SYSTEM DEPENDENCIES
