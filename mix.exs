@@ -17,7 +17,7 @@ defmodule DependabotTest.Mixfile do
 
   defp deps do
     [
-      {:plug, "1.3.0"},
+      {:plug, "1.13.6"},
       {:phoenix, "== 1.2.1"}
     ]
   end
