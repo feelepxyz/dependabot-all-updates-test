@@ -82,7 +82,7 @@ resource "aws_cloudfront_distribution" "default" {
 
 
 module "github_ssh_without_protocol" {
-  source     = "git@github.com:cloudposse/terraform-aws-jenkins.git?ref=tags/0.4.0//some/dir"
+  source     = "git@github.com:cloudposse/terraform-aws-jenkins.git?ref=tags/0.9.4//some/dir"
   namespace  = "${var.namespace}"
   stage      = "${var.stage}"
   name       = "${var.name}"
